@@ -1,0 +1,120 @@
+@import url(variables.css);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+
+  width: 100%;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+.container-input {
+  max-width: 480px;
+  margin: 14px 0;
+}
+
+.container-input span{
+  color: white;
+  font-size: 2.2rem;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #dfdfdf;
+  height: 18px;
+  outline: none;
+  margin-top: 8px;
+}
+
+.button-cta {
+  height: 40px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--button-color);
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.container-password {
+  max-width: 480px;
+  margin: 14px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.password {
+  height: 60px;
+  background-color: var(--bg-dark);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.4rem;
+
+  border: 1px solid var(--boder-gray);
+
+  transition: transform 0.2s;
+}
+
+.password:hover {
+  transform: scale(1.05);
+}
+
+.tooltip {
+  color: white;
+  position: relative;
+  top: 20px;
+  padding: 6px 8px;
+  background-color: var(--bg-dark);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .tooltip {
+  visibility: visible;
+  bottom: 50px;
+  opacity: 1;
+}
+
+.hide {
+  visibility: hidden;
+}
